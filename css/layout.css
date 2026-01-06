@@ -1,0 +1,139 @@
+/* Header  */
+.nav-bar {
+  height: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+}
+
+.logo img {
+  height: 46px;
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  gap: 38px;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 28px;
+}
+
+/* Burger hidden desktop */
+.burger {
+  display: none;
+  background: transparent;
+  border: 0;
+  padding: 10px;
+}
+.burger span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: #000;
+  margin: 5px 0;
+}
+
+/* Banner */
+.name-banner {
+  height: 31px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.name-banner .marquee {
+  animation: marquee 18s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Hero */
+.page {
+  padding: 60px 18px 90px;
+}
+
+.hero {
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-strip {
+  box-shadow: var(--shadow);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 10px 22px;
+}
+
+/* Multimediadesign strip */
+.hero-strip--blue {
+  background: var(--blue);
+  width: 1259px;
+  height: 61px;
+  margin: 18px 0 28px auto; /* right align */
+}
+
+/* PORTFOLIO strip */
+.hero-strip--dark {
+  background: var(--ink);
+  width: 1128px;
+  height: 165px;
+  margin: 0 auto 55px 0; /* left align */
+  padding: 14px 28px;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 97px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .hero-strip--blue,
+  .hero-strip--dark {
+    width: 92vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-title {
+    font-size: clamp(64px, 10vw, 120px);
+  }
+  .hero-strip-text {
+    font-size: clamp(28px, 6vw, 46px);
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-links {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .hero-actions {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .btn {
+    width: min(340px, 90vw);
+    text-align: center;
+  }
+}
