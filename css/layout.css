@@ -62,7 +62,7 @@
 
 /* Hero */
 .page {
-  padding: 60px 18px 90px;
+  padding: 60px 28px 90px;
 }
 
 .hero {
@@ -100,6 +100,12 @@
   padding-left: 20px;
   padding-right: 22px;
 }
+.hero-strip--blue .star {
+  transform: translateY(2px);
+}
+.hero-strip--dark .star {
+  font-size: 36px;
+}
 
 /* PORTFOLIO strip */
 .hero-strip--dark {
@@ -129,6 +135,10 @@
 }
 
 @media (max-width: 900px) {
+  .page {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
   .hero-strip--blue,
   .hero-strip--dark {
     padding-left: 22px;
@@ -156,6 +166,10 @@
 }
 
 @media (max-width: 700px) {
+  .page {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   .nav-links {
     display: none;
   }
@@ -163,17 +177,6 @@
     display: block;
   }
 
-  .hero-strip--blue,
-  .hero-strip--dark {
-    width: 92vw;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    transform: none;
-  }
-}
-
-@media (max-width: 600px) {
   .page {
     padding-left: 0;
     padding-right: 0;
