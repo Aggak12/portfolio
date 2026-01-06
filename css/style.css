@@ -83,6 +83,16 @@ body {
   line-height: 1;
 }
 
+/* About hero */
+.about-hero__title {
+  font-family: "Anton", sans-serif;
+  font-size: clamp(64px, 9vw, 140px);
+  letter-spacing: 0.03em;
+  margin: 0;
+  line-height: 1;
+  color: var(--ink);
+}
+
 .star {
   font-size: 28px;
   color: var(--ink);

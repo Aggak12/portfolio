@@ -3,7 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>About Me</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Anton&family=Bruno+Ace+SC&family=Staatliches&display=swap" rel="stylesheet" />
   </head>
-  <body></body>
+
+  <body>
+    <header class="nav-bar">
+      <a class="logo" href="index.html" aria-label="Go to home">
+        <img src="imgs/logo.svg" alt="AK logo" />
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="about.html">ABOUT</a>
+      </nav>
+
+      <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </header>
+
+    <main>
+      <section class="about-hero" aria-label="About hero">
+        <img class="about-hero__bg" src="imgs/abhero.png" alt="" aria-hidden="true" />
+
+        <div class="hero-strip hero-strip--about">
+          <span class="star">✶</span>
+          <h1 class="about-hero__title">ABOUT ME</h1>
+          <span class="star">✶</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
 </html>
