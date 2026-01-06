@@ -8,7 +8,12 @@
 
   --shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
   --shadow-soft: 0 3px 8px rgba(0, 0, 0, 0.12);
+
+  /* button border + button width */
   --border: 2px solid #000;
+  --btn-border: 3px solid #000;
+  --btn-width: 360px;
+
   --radius: 10px;
 }
 
@@ -31,6 +36,30 @@ body {
   text-decoration: none;
 }
 
+/* NAV LINK HOVER UNDERLINE */
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 3px;
+  background: #000;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 160ms ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* Hero */
 .hero-welcome {
   font-family: "Akaya Kanadaka", serif;
   font-size: 42px;
@@ -60,27 +89,42 @@ body {
   display: inline-block;
   transform: translateY(-2px);
 }
+
 .star--light {
   color: var(--bg);
 }
 
-/* Buttons */
+/* BUTTONS  */
 .btn {
+  width: var(--btn-width);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   background: var(--btn-fill);
-  border: var(--border);
+  border: var(--btn-border);
   border-radius: var(--radius);
-  padding: 14px 34px;
+
+  padding: 14px 22px;
   font-size: 26px;
+
   box-shadow: var(--shadow-soft);
+  transition: background 160ms ease, color 160ms ease, border-color 160ms ease, transform 120ms ease;
 }
-.btn:hover {
+
+.btn:hover,
+.btn:focus-visible {
+  background: #fff;
+  border-color: var(--blue);
+  color: var(--blue);
   transform: translateY(-1px);
 }
+
 .btn:active {
   transform: translateY(1px);
 }
 
-/* Banner text */
+/* BANNER TEXT  */
 .name-banner {
   background: var(--bg);
   border-top: 2px solid rgba(0, 0, 0, 0.35);
@@ -89,13 +133,20 @@ body {
 
 .marquee {
   display: inline-flex;
-  gap: 18px;
+  gap: 22px;
   white-space: nowrap;
   font-family: "Bruno Ace SC", sans-serif;
   font-size: 24px;
   color: var(--muted);
   opacity: 0.95;
   padding: 2px 0;
+}
+
+.banner-star {
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 14px;
+  transform: translateY(-1px);
 }
 
 /* Reduced motion */
