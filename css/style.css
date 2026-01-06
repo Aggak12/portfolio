@@ -105,8 +105,8 @@ body {
   border: var(--btn-border);
   border-radius: var(--radius);
 
-  padding: 14px 22px;
-  font-size: 26px;
+  padding: 10px 22px;
+  font-size: 36px;
 
   box-shadow: var(--shadow-soft);
   transition: background 160ms ease, color 160ms ease, border-color 160ms ease, transform 120ms ease;

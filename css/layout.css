@@ -66,14 +66,14 @@
 }
 
 .hero {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   text-align: center;
 }
 
 .hero-strip {
   box-shadow: var(--shadow);
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 18px;
@@ -83,18 +83,41 @@
 /* Multimediadesign strip */
 .hero-strip--blue {
   background: var(--blue);
-  width: 1259px;
   height: 61px;
-  margin: 18px 0 28px auto; /* right align */
+
+  width: 83vw;
+  margin: 18px 0 28px;
+  position: relative;
+  left: 0;
+  right: 0;
+
+  /* anchor to right edge */
+  margin-left: auto;
+  margin-right: calc(50% - 50vw);
+
+  /* content to right edge */
+  justify-content: flex-start;
+  padding-left: 20px;
+  padding-right: 22px;
 }
 
 /* PORTFOLIO strip */
 .hero-strip--dark {
   background: var(--ink);
-  width: 1128px;
   height: 165px;
-  margin: 0 auto 55px 0; /* left align */
+
+  width: 76vw;
+  margin: 0 0 55px;
   padding: 14px 28px;
+
+  /* anchor to left edge */
+  margin-left: calc(50% - 50vw);
+  margin-right: auto;
+
+  /* content to left edge */
+  justify-content: flex-end;
+  padding-left: 60px;
+  padding-right: 28px;
 }
 
 .hero-actions {
@@ -108,16 +131,27 @@
 @media (max-width: 900px) {
   .hero-strip--blue,
   .hero-strip--dark {
-    width: 92vw;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 22px;
+    padding-right: 22px;
   }
-
   .hero-title {
     font-size: clamp(64px, 10vw, 120px);
   }
   .hero-strip-text {
     font-size: clamp(28px, 6vw, 46px);
+  }
+}
+
+@media (max-width: 835px) {
+  .hero-actions {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .btn {
+    width: min(360px, 90vw);
+    text-align: center;
   }
 }
 
@@ -128,12 +162,35 @@
   .burger {
     display: block;
   }
-  .hero-actions {
-    flex-direction: column;
-    gap: 18px;
+
+  .hero-strip--blue,
+  .hero-strip--dark {
+    width: 92vw;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    transform: none;
   }
-  .btn {
-    width: min(340px, 90vw);
-    text-align: center;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .hero {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-strip--blue,
+  .hero-strip--dark {
+    width: 100vw;
+    margin-left: 50%;
+    margin-right: 0;
+    transform: translateX(-50%);
+    justify-content: center;
+    padding-left: 22px;
+    padding-right: 22px;
   }
 }
