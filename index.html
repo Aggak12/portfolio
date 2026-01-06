@@ -4,6 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Anton&family=Bruno+Ace+SC&family=Inter:wght@400;500&family=Staatliches&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/layout.css" />
   </head>
-  <body></body>
+
+  <body>
+    <header class="site-header">
+      <div class="nav-bar">
+        <a class="logo" href="index.html" aria-label="Home">
+          <img src="imgs/logo.svg" alt="AAK logo" />
+        </a>
+
+        <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="portfolio.html">PORTFOLIO</a>
+          <a href="about.html">ABOUT ME</a>
+        </nav>
+      </div>
+
+      <!-- BANNER -->
+      <div class="name-banner" aria-label="Name banner">
+        <div class="marquee">
+          <span>AGNIESZKA KIELTYKA ★ </span>
+          <span>AGNIESZKA KIELTYKA ★ </span>
+          <span>AGNIESZKA KIELTYKA ★ </span>
+          <span>AGNIESZKA KIELTYKA ★ </span>
+          <span>AGNIESZKA KIELTYKA ★ </span>
+          <span>AGNIESZKA KIELTYKA ★ </span>
+          <span>AGNIESZKA KIELTYKA ★ </span>
+          <span>AGNIESZKA KIELTYKA ★ </span>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main class="page">
+      <section class="hero">
+        <p class="hero-welcome">Welcome to My</p>
+
+        <div class="hero-strip hero-strip--blue">
+          <span class="star">✶</span>
+          <span class="hero-strip-text">Multimediadesign</span>
+          <span class="star">✶</span>
+        </div>
+
+        <div class="hero-strip hero-strip--dark">
+          <span class="star star--light">✶</span>
+          <h1 class="hero-title">PORTFOLIO</h1>
+          <span class="star star--light">✶</span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn" href="portfolio.html">VIEW PORTFOLIO</a>
+          <a class="btn" href="about.html">ABOUT ME</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
