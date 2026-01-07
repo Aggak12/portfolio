@@ -234,8 +234,11 @@
   height: auto;
   display: block;
   object-fit: cover;
+
   max-width: 420px;
-  margin-left: auto;
+
+  justify-self: start;
+  margin-left: -40px;
 }
 
 @media (max-width: 900px) {
@@ -361,5 +364,14 @@
     box-shadow: var(--shadow);
     border-bottom: 1px solid #696969;
     z-index: 999;
+  }
+}
+
+/* img centered */
+@media (max-width: 900px) {
+  .about-profile__image img {
+    justify-self: center;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
