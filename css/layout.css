@@ -191,11 +191,15 @@
   gap: 80px;
 
   padding: 120px 28px;
+  padding-bottom: 110px;
   align-items: center;
+  position: relative;
 }
 
 .about-profile__content {
   max-width: 700px;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-profile__name {
@@ -239,6 +243,18 @@
 
   justify-self: start;
   margin-left: -40px;
+}
+
+.about-profile .scroll-hint {
+  position: absolute;
+  left: 50%;
+  bottom: 85px;
+  transform: translateX(-80%);
+
+  font-size: 26px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  pointer-events: none;
 }
 
 @media (max-width: 900px) {
@@ -373,5 +389,10 @@
     justify-self: center;
     margin-left: 0;
     margin-right: 0;
+  }
+}
+@media (max-width: 700px) {
+  .about-profile .scroll-hint {
+    display: none;
   }
 }
