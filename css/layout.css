@@ -321,6 +321,39 @@
   margin-top: 22px;
 }
 
+/* footer */
+.site-footer {
+  background: var(--ink);
+  color: var(--bg);
+  padding: 48px 28px;
+  text-align: center;
+}
+
+.site-footer__name {
+  font-family: "Akaya Kanadaka", serif;
+  font-size: 28px;
+  margin: 0 0 12px;
+  color: var(--blue);
+}
+
+.site-footer__contact {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.site-footer__contact a {
+  color: var(--bg);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.site-footer__contact a:hover,
+.site-footer__contact a:focus-visible {
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
 @media (max-width: 900px) {
   .page {
     padding-left: 24px;
