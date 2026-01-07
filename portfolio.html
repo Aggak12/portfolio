@@ -4,6 +4,144 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Anton&family=Bruno+Ace+SC&family=Inter:wght@400;500;600&family=Staatliches&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/layout.css" />
   </head>
-  <body></body>
+
+  <body>
+    <header class="site-header">
+      <div class="nav-bar">
+        <a class="logo" href="index.html" aria-label="Home">
+          <img src="imgs/logo.svg" alt="AAK logo" />
+        </a>
+
+        <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="portfolio.html">PORTFOLIO</a>
+          <a href="about.html">ABOUT ME</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- PORTFOLIO HERO -->
+      <section class="portfolio-hero" aria-label="Portfolio hero">
+        <div class="hero-strip portfolio-hero__strip">
+          <span class="star star--light">✶</span>
+          <h1 class="portfolio-hero__title">PORTFOLIO</h1>
+          <span class="star star--light">✶</span>
+        </div>
+
+        <p class="portfolio-hero__intro">A selection of my first semester projects, including process, methods, and final solutions.</p>
+      </section>
+
+      <section class="portfolio-section" aria-label="Projects">
+        <div class="portfolio-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-card__preview" aria-label="Project preview">
+              <div class="project-card__placeholder">Preview image</div>
+              <!-- Later:
+        <img class="project-card__img" src="imgs/project01-01.jpg" alt="Preview of Project 01" />
+        -->
+            </div>
+
+            <div class="project-card__content">
+              <h2 class="project-card__title">Project 01 – Mobilsite</h2>
+              <p class="project-card__subtitle">Introductory mobile website focusing on basic HTML, CSS, and layout structure.</p>
+
+              <button class="btn btn--small project-open" type="button" data-project="0">VIEW PROJECT</button>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-card__preview" aria-label="Project preview">
+              <div class="project-card__placeholder">Preview image</div>
+              <!-- <img class="project-card__img" src="imgs/project02-01.jpg" alt="Preview of Project 02" /> -->
+            </div>
+
+            <div class="project-card__content">
+              <h2 class="project-card__title">Project 02 – Emnesite</h2>
+              <p class="project-card__subtitle">Independent website project covering research, prototyping and documentation.</p>
+
+              <button class="btn btn--small project-open" type="button" data-project="1">VIEW PROJECT</button>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-card__preview" aria-label="Project preview">
+              <div class="project-card__placeholder">Preview image</div>
+              <!-- <img class="project-card__img" src="imgs/project03-01.jpg" alt="Preview of Project 03" /> -->
+            </div>
+
+            <div class="project-card__content">
+              <h2 class="project-card__title">Project 03 – Emergency site</h2>
+              <p class="project-card__subtitle">Fictional emergency website using SVG graphics and visual communication.</p>
+
+              <button class="btn btn--small project-open" type="button" data-project="2">VIEW PROJECT</button>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <div class="project-card__preview" aria-label="Project preview">
+              <div class="project-card__placeholder">Preview image</div>
+              <!-- <img class="project-card__img" src="imgs/project04-01.jpg" alt="Preview of Project 04" /> -->
+            </div>
+
+            <div class="project-card__content">
+              <h2 class="project-card__title">Project 04 – Virksomhedsite</h2>
+              <p class="project-card__subtitle">Group based redesign of an existing website.</p>
+
+              <button class="btn btn--small project-open" type="button" data-project="3">VIEW PROJECT</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- MODAL -->
+      <div class="modal" id="projectModal" aria-hidden="true">
+        <div class="modal__backdrop" data-close></div>
+
+        <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+          <button class="modal__close" type="button" aria-label="Close popup" data-close>✕</button>
+
+          <h2 class="modal__title" id="modalTitle">Project title</h2>
+
+          <div class="modal__carousel" aria-label="Project images carousel">
+            <button class="carousel__btn" type="button" aria-label="Previous image" data-prev>‹</button>
+
+            <div class="carousel__frame">
+              <img class="carousel__img" src="" alt="" />
+              <p class="carousel__count" aria-live="polite">1 / 1</p>
+            </div>
+
+            <button class="carousel__btn" type="button" aria-label="Next image" data-next>›</button>
+          </div>
+
+          <div class="modal__text">
+            <p class="modal__body">FILLER: Process text goes here. We will replace this later.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p class="site-footer__name">Agnieszka Kieltyka</p>
+      <p class="site-footer__contact">
+        Contact:
+        <a href="mailto:your@email.com">aggaz2004@gmail.com</a>
+      </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

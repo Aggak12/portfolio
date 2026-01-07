@@ -134,6 +134,13 @@ body {
   transform: translateY(1px);
 }
 
+/* button for cards */
+.btn--small {
+  width: auto;
+  font-size: 22px;
+  padding: 8px 14px;
+}
+
 /* BANNER TEXT  */
 .name-banner {
   background: var(--bg);
