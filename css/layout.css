@@ -181,6 +181,61 @@
   font-size: clamp(76px, 9vw, 150px);
   line-height: 1;
 }
+/* About profile */
+.about-profile {
+  background: #222222;
+  color: #ffffff;
+
+  display: grid;
+  grid-template-columns: 1.5fr 0.75fr;
+  gap: 80px;
+
+  padding: 120px 28px;
+  align-items: center;
+}
+
+.about-profile__content {
+  max-width: 700px;
+}
+
+.about-profile__name {
+  font-family: "Akaya Kanadaka", serif;
+  font-size: 56px;
+  color: #a4ceff;
+  margin: 0;
+}
+
+.about-profile__subtitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 12px 0 32px;
+}
+
+.about-profile__divider {
+  width: 700px;
+  height: 1px;
+  background: #ffffff;
+  margin-bottom: 40px;
+}
+
+.about-profile__text {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 60ch;
+}
+
+.about-profile__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-width: 420px;
+  margin-left: auto;
+}
 
 @media (max-width: 900px) {
   .page {
@@ -200,6 +255,14 @@
   }
   .hero-strip--about {
     top: 38%;
+  }
+  .about-profile {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .about-profile__image {
+    order: -1;
   }
 }
 
@@ -266,5 +329,16 @@
     padding-left: 22px;
     padding-right: 22px;
     top: 37%;
+  }
+  .about-profile {
+    padding: 80px 16px;
+  }
+
+  .about-profile__name {
+    font-size: 42px;
+  }
+
+  .about-profile__subtitle {
+    font-size: 16px;
   }
 }
