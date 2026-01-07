@@ -257,6 +257,70 @@
   pointer-events: none;
 }
 
+/* About reflection */
+.about-reflection {
+  background: var(--bg);
+  padding: 110px 28px;
+}
+
+.about-reflection__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-reflection__strip {
+  background: var(--blue);
+  height: 90px;
+  width: 63vw;
+
+  margin-left: calc(50% - 50vw);
+  margin-right: auto;
+
+  justify-content: flex-end;
+  padding-left: 22px;
+  padding-right: 28px;
+
+  box-shadow: var(--shadow);
+}
+
+.about-reflection__strip .star {
+  font-size: 36px;
+  transform: translateY(-1px);
+}
+
+.about-reflection__title {
+  font-family: "Akaya Kanadaka", serif;
+  font-size: clamp(32px, 4vw, 52px);
+  letter-spacing: 0.03em;
+  margin: 0;
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.about-reflection__card {
+  margin: 44px auto 0;
+  max-width: min(960px, 90vw);
+
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.35);
+  border-radius: var(--radius);
+
+  padding: 34px 32px;
+  box-shadow: var(--shadow-soft);
+}
+
+.about-reflection__card p {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--ink);
+}
+
+.about-reflection__card p + p {
+  margin-top: 22px;
+}
+
 @media (max-width: 900px) {
   .page {
     padding-left: 24px;
@@ -380,6 +444,22 @@
     box-shadow: var(--shadow);
     border-bottom: 1px solid #696969;
     z-index: 999;
+  }
+  .about-reflection {
+    padding: 80px 16px;
+  }
+
+  .about-reflection__strip {
+    width: 100vw;
+    margin-left: 50%;
+    margin-right: 0;
+    transform: translateX(-50%);
+    justify-content: center;
+    height: 90px;
+  }
+
+  .about-reflection__card {
+    padding: 24px 18px;
   }
 }
 
