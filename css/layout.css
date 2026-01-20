@@ -245,18 +245,6 @@
   margin-left: -40px;
 }
 
-.about-profile .scroll-hint {
-  position: absolute;
-  left: 50%;
-  bottom: 85px;
-  transform: translateX(-80%);
-
-  font-size: 26px;
-  color: rgba(255, 255, 255, 0.6);
-  text-align: center;
-  pointer-events: none;
-}
-
 /* About reflection */
 .about-reflection {
   background: var(--bg);
@@ -410,22 +398,6 @@
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 18px;
-}
-
-.tag {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 6px 10px;
-  border-radius: 999px;
-  border: 1px solid rgba(0, 0, 0, 0.35);
-  background: rgba(255, 255, 255, 0.55);
-
-  font-family: "Staatliches", sans-serif;
-  letter-spacing: 0.03em;
-  font-size: 14px;
-  color: var(--ink);
 }
 
 /* Preview area */
@@ -803,10 +775,5 @@
     justify-self: center;
     margin-left: 0;
     margin-right: 0;
-  }
-}
-@media (max-width: 700px) {
-  .about-profile .scroll-hint {
-    display: none;
   }
 }
