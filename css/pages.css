@@ -1,0 +1,74 @@
+/* INDEX HERO */
+.hero {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 120px 0 0;
+}
+
+.hero-kicker {
+  margin: 0 0 9px;
+  font-family: "Tiny5", sans-serif;
+  font-size: 64px;
+  color: var(--blue);
+  letter-spacing: 0.02em;
+
+  padding-left: clamp(80px, 12vw, 220px);
+}
+
+.hero-title {
+  margin: 0;
+  font-size: clamp(145px, 19vw, 255px);
+  line-height: 0.95;
+  font-family: "Anton", sans-serif;
+  text-align: left;
+  width: fit-content;
+  margin-left: clamp(80px, 12vw, 220px);
+
+  color: var(--red);
+  letter-spacing: 0.03em;
+
+  -webkit-text-stroke: 0;
+  text-shadow:
+    2px 0 0 var(--blue),
+    -2px 0 0 var(--blue),
+    0 2px 0 var(--blue),
+    0 -2px 0 var(--blue);
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: clamp(24px, 6vw, 90px);
+  margin-top: 78px;
+  flex-wrap: wrap;
+}
+
+/* INDEX button variants */
+.btn--primary {
+  background: rgba(111, 23, 42, 0.7); /* 73% */
+  border: var(--btn-border);
+  color: var(--blue);
+}
+
+.btn--ghost {
+  background: transparent;
+  border: var(--btn-border);
+  color: var(--blue);
+}
+
+@media (max-width: 835px) {
+  .hero-actions .btn {
+    width: min(420px, 92vw);
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding-top: 70px;
+  }
+  .hero-kicker {
+    padding-left: 0;
+    text-align: center;
+    font-size: clamp(44px, 8vw, 64px);
+  }
+}

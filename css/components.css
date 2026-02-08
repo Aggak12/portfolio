@@ -1,0 +1,90 @@
+/* Shared link + button font */
+.nav-links a,
+.btn {
+  font-family: "Staatliches", sans-serif;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+/* Nav links (white like screenshot) */
+.nav-links a {
+  color: var(--ink);
+  position: relative;
+}
+
+/* NAV LINK HOVER UNDERLINE */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 3px;
+  background: var(--ink);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 160ms ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* Banner look */
+.name-banner {
+  background: var(--banner-bg);
+  border-top: 2px solid rgba(0, 0, 0, 0.35);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.35);
+}
+
+.marquee {
+  display: inline-flex;
+  gap: 22px;
+  white-space: nowrap;
+  font-family: "Bruno Ace SC", sans-serif;
+  font-size: 24px;
+  color: var(--banner-ink);
+  opacity: 0.95;
+  padding: 2px 0;
+}
+
+.banner-star {
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 14px;
+  transform: translateY(-1px);
+}
+
+/* Buttons (base) */
+.btn {
+  width: var(--btn-width);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: var(--radius);
+  padding: 10px 22px;
+  font-size: 36px;
+
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform 120ms ease,
+    filter 160ms ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    animation: none !important;
+  }
+}
