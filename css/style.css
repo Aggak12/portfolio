@@ -10,10 +10,10 @@
   --banner-ink: #696969;
 
   --shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
-  --shadow-soft: 0 3px 8px rgba(0, 0, 0, 0.12);
+  --shadow-soft: 0 3px 8px rgba(100, 7, 7, 0.598);
 
-  --radius: 10px;
-  --btn-border: 3px solid var(--blue);
+  --radius: 14px;
+  --btn-border: 2px solid var(--blue);
   --btn-width: 360px;
 }
 

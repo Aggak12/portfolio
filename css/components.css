@@ -33,9 +33,9 @@
 
 /* Banner look */
 .name-banner {
-  background: var(--banner-bg);
-  border-top: 2px solid rgba(0, 0, 0, 0.35);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.35);
+  background: var(--bg); /* same as page */
+  border-top: 1px solid rgba(106, 7, 7, 0);
+  border-bottom: 1px solid rgb(73, 73, 73);
 }
 
 .marquee {
@@ -44,7 +44,7 @@
   white-space: nowrap;
   font-family: "Bruno Ace SC", sans-serif;
   font-size: 24px;
-  color: var(--banner-ink);
+  color: #535353;
   opacity: 0.95;
   padding: 2px 0;
 }
@@ -76,6 +76,8 @@
 .btn:hover,
 .btn:focus-visible {
   transform: translateY(-1px);
+  background: #a3a3a3;
+  color: var(--red);
 }
 
 .btn:active {
