@@ -31,7 +31,7 @@
     {
       title: "Project 4 – Virksomhedsite",
       body: "Dummy text for now. Describe group collaboration, redesign decisions, and outcome improvements.",
-      images: ["imgs/emnesite-pre.png", "imgs/emnesite-pre.png"],
+      images: ["imgs/virksm1.png", "imgs/virksm2.png", "imgs/virksm3.png", "imgs/virksm4.png"],
     },
   ];
 
