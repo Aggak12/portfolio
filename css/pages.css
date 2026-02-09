@@ -394,3 +394,110 @@
     padding: 12px 26px;
   }
 }
+/* PORTFOLIO HERO */
+.portfolio-hero {
+  background: #a1a0a0;
+  min-height: clamp(520px, 82vh, 760px);
+  display: grid;
+  align-content: start;
+  justify-items: center;
+  padding-top: 140px;
+}
+
+.portfolio-hero__strip {
+  width: 100%;
+  height: clamp(180px, 26vh, 250px);
+
+  background: rgba(164, 206, 255, 0.8); /* var(--blue) @ 80% */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: visible;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.22);
+}
+
+.portfolio-hero__inner {
+  width: min(1200px, 92vw);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.portfolio-hero__inner .portfolio-hero__star:first-child {
+  justify-self: start;
+}
+.portfolio-hero__inner .portfolio-hero__star:last-child {
+  justify-self: end;
+}
+.portfolio-hero__title {
+  justify-self: center;
+}
+
+.portfolio-hero__title {
+  position: relative;
+  margin: 0;
+  font-family: "Anton", sans-serif;
+
+  font-size: clamp(220px, 20vw, 320px);
+  line-height: 0.85;
+  letter-spacing: 12px;
+
+  color: var(--red);
+  -webkit-text-stroke: 4px var(--blue);
+  paint-order: stroke fill;
+
+  /* extend outside banner */
+  transform: translateY(-1%);
+  transform: translate(-6px, -1%);
+
+  text-shadow:
+    0 12px 18px rgba(0, 0, 0, 0.22),
+    0 5px 10px rgba(0, 0, 0, 0.18);
+}
+
+/* Stars */
+
+.portfolio-hero__star {
+  width: clamp(34px, 4.2vw, 52px);
+  height: auto;
+
+  position: static;
+  top: auto;
+  left: auto;
+  right: auto;
+  transform: none;
+
+  filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.25));
+  opacity: 0.95;
+}
+
+.portfolio-hero__intro {
+  margin: 90px 0 0;
+  font-family: "Amarante", serif;
+  font-size: clamp(18px, 2.2vw, 26px);
+  color: #6f1426;
+  text-align: center;
+  max-width: 65ch;
+  padding: 0 20px;
+}
+
+@media (max-width: 520px) {
+  .portfolio-hero__strip {
+    height: 190px;
+  }
+
+  .portfolio-hero__star--left {
+    left: 18px;
+  }
+
+  .portfolio-hero__star--right {
+    right: 18px;
+  }
+
+  .portfolio-hero__intro {
+    margin-top: 70px;
+  }
+}
