@@ -27,7 +27,7 @@
       body: `Emnesite was an introduction to UX/UI thinking and a more design-driven project with greater creative freedom. The process began with research and idea development, followed by solution sketches that were shared and discussed in a class “gallery” format for peer feedback. We worked with user types, user goals, and user stories, and developed mood boards and style tiles to shape the visual direction. I created my own layout diagrams and focused on prototyping in Figma, working from low-fidelity to high-fidelity. This project also introduced usability methods such as Likert tests and 5-second tests, as well as tools like Lighthouse testing.
 
 My concept was a fashion-focused website exploring history and meaning behind clothing, aiming to spark curiosity by combining visual appeal with small, engaging facts. I became very absorbed in experimenting with layout, colour, and visual structure, which strengthened my design confidence and creativity. Although I did not complete the full coded version, I built the landing page and gained a much clearer understanding of how design complexity impacts implementation, which has influenced how I approach later projects.`,
-      images: ["imgs/emne1.png", "imgs/emne2.png"],
+      images: ["imgs/emne1.png", "imgs/emne2.png", "imgs/emne3.png", "imgs/emne4.png", "imgs/emne5.png", "imgs/emne6.png", "imgs/emne7.png"],
     },
 
     {
