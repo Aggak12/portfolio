@@ -120,14 +120,15 @@
   transform: translate(-56%, -50%);
 
   width: min(880px, 76vw);
-  height: 160px;
+  height: 180px;
 
   background: #000;
   box-shadow: var(--shadow);
 
   display: grid;
   grid-template-columns: auto max-content auto;
-  padding: 0 135px;
+  column-gap: 6px;
+  padding: 0 135px 0 95px;
   align-items: center;
   clip-path: inset(0 0 0 40px);
 }
@@ -145,7 +146,7 @@
   text-align: center;
 
   font-family: "Anton", sans-serif;
-  font-size: clamp(88px, 12vw, 138px); /* bigger */
+  font-size: clamp(110px, 14vw, 160px); /* bigger */
   line-height: 0.9;
   letter-spacing: 0.03em;
 
@@ -153,6 +154,54 @@
   -webkit-text-stroke: 2px var(--blue);
   paint-order: stroke fill;
   text-shadow: none;
+}
+/* =========================
+   ABOUT PAGE — HERO (mobile)
+   ========================= */
+
+@media (max-width: 700px) {
+  .about-hero {
+    height: 70vh;
+    min-height: 560px;
+  }
+
+  /* keep your crop consistent (choose ONE) */
+  .about-hero__bg {
+    object-position: center 40%;
+  }
+
+  .about-hero__strip {
+    top: 38%;
+
+    /* keep your asymmetry on mobile too */
+    transform: translate(-56%, -50%);
+
+    width: 92vw;
+    height: 120px;
+
+    padding: 0 18px 0 28px;
+
+    /* IMPORTANT: keep stars hugging the text */
+    grid-template-columns: auto max-content auto;
+    column-gap: 6px;
+
+    /* keep your “shorter left tail” */
+    clip-path: inset(0 0 0 24px);
+  }
+
+  .about-hero__star {
+    width: 34px;
+    height: 34px;
+  }
+
+  .about-hero__title {
+    white-space: nowrap;
+    font-size: clamp(87px, 12vw, 88px);
+    line-height: 1;
+    letter-spacing: 0.02em;
+
+    -webkit-text-stroke: 1.5px var(--blue);
+  }
 }
 /* =========================
    ABOUT PAGE — PROFILE CARD
@@ -173,11 +222,11 @@
   border: 2px solid #000;
   border-radius: 30px;
 
-  padding: 60px 60px;
+  padding: 60px 50px 60px 90px;
   display: grid;
   grid-template-columns: 1.8fr 0.6fr;
 
-  gap: 60px;
+  gap: 70px;
   align-items: start;
 }
 
@@ -231,6 +280,9 @@
   border-radius: 0;
 }
 @media (max-width: 900px) {
+  .about-profile {
+    padding: 50px 18px;
+  }
   .about-profile__card {
     grid-template-columns: 1fr;
     padding: 34px 22px;
@@ -238,7 +290,17 @@
   }
 
   .about-profile__image {
-    order: -1; /* image first on mobile (optional) */
+    order: -1;
+  }
+  .about-profile__image img {
+    width: min(360px, 90%);
+    justify-self: center;
+    border-radius: 13px;
+    margin-top: 24px;
+  }
+  .about-profile__name {
+    font-size: 44px;
+    line-height: 1;
   }
 
   .about-profile__subtitle {
@@ -246,58 +308,10 @@
   }
 
   .about-profile__text {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 
-/* =========================
-   ABOUT PAGE — HERO (mobile)
-   ========================= */
-
-@media (max-width: 700px) {
-  .about-hero {
-    height: 70vh;
-    min-height: 560px;
-  }
-
-  /* keep your crop consistent (choose ONE) */
-  .about-hero__bg {
-    object-position: center 40%;
-  }
-
-  .about-hero__strip {
-    top: 38%;
-
-    /* keep your asymmetry on mobile too */
-    transform: translate(-56%, -50%);
-
-    width: 92vw;
-    height: 120px;
-
-    padding: 0 18px 0 28px;
-
-    /* IMPORTANT: keep stars hugging the text */
-    grid-template-columns: auto max-content auto;
-    column-gap: 6px;
-
-    /* keep your “shorter left tail” */
-    clip-path: inset(0 0 0 24px);
-  }
-
-  .about-hero__star {
-    width: 34px;
-    height: 34px;
-  }
-
-  .about-hero__title {
-    white-space: nowrap;
-    font-size: clamp(87px, 12vw, 88px);
-    line-height: 1;
-    letter-spacing: 0.02em;
-
-    -webkit-text-stroke: 1.5px var(--blue);
-  }
-}
 /* =========================
    ABOUT PAGE — REFLECTION
    ========================= */
@@ -352,7 +366,6 @@
   box-shadow: var(--shadow-soft);
 }
 
-/* hover (same vibe as your other buttons) */
 .btn--reflection:hover,
 .btn--reflection:focus-visible {
   filter: brightness(1.05);
@@ -360,6 +373,7 @@
 }
 
 /* mobile */
+
 @media (max-width: 700px) {
   .about-reflection {
     padding: 60px 16px 54px;
