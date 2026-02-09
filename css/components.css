@@ -100,3 +100,33 @@
     animation: none !important;
   }
 }
+
+/* ===== FOOTER ===== */
+.site-footer {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.site-footer__contact {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  color: #d4d4d4;
+  opacity: 0.75; /* softer, not loud */
+}
+
+.site-footer__contact a {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 500;
+  transition:
+    opacity 120ms ease,
+    text-decoration 120ms ease;
+}
+
+.site-footer__contact a:hover,
+.site-footer__contact a:focus-visible {
+  text-decoration: underline;
+  opacity: 1;
+}
