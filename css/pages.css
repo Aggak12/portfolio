@@ -154,6 +154,101 @@
   paint-order: stroke fill;
   text-shadow: none;
 }
+/* =========================
+   ABOUT PAGE — PROFILE CARD
+   ========================= */
+
+.about-profile {
+  background: var(--red);
+  padding: 90px 28px;
+}
+.about-profile {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.about-profile__card {
+  max-width: 1320px;
+  margin: 0 auto;
+
+  background: #d9d9d9;
+  border: 2px solid #000;
+  border-radius: 30px;
+
+  padding: 54px 60px;
+  display: grid;
+  grid-template-columns: 1.6fr 0.9fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* left column */
+.about-profile__name {
+  margin: 0;
+  font-family: "Amarante", serif;
+  font-size: clamp(38px, 4vw, 80px);
+  line-height: 1;
+
+  color: var(--blue);
+  -webkit-text-stroke: 2px #000;
+  paint-order: stroke fill;
+}
+
+.about-profile__subtitle {
+  margin: 14px 0 26px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #000;
+}
+
+.about-profile__divider {
+  height: 1px;
+  width: min(860px, 100%);
+  background: rgba(111, 23, 42, 0.55);
+  margin: 0 0 34px;
+}
+
+.about-profile__text {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.9;
+  color: #000;
+  max-width: 72ch;
+}
+
+/* right column image */
+.about-profile__image img {
+  width: 75%;
+  height: auto;
+  display: block;
+
+  border-radius: 4px;
+  object-fit: cover;
+}
+@media (max-width: 900px) {
+  .about-profile__card {
+    grid-template-columns: 1fr;
+    padding: 34px 22px;
+    gap: 26px;
+  }
+
+  .about-profile__image {
+    order: -1; /* image first on mobile (optional) */
+  }
+
+  .about-profile__subtitle {
+    font-size: 18px;
+  }
+
+  .about-profile__text {
+    font-size: 18px;
+  }
+}
 
 /* =========================
    ABOUT PAGE — HERO (mobile)
