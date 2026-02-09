@@ -529,6 +529,8 @@
   display: block;
   object-fit: cover;
   object-position: top;
+  filter: grayscale(100%);
+  transition: filter 250ms ease;
 }
 
 /* Text area */
@@ -540,7 +542,7 @@
 .project-card__title {
   margin: 0 0 10px;
   font-family: "Amarante", serif;
-  font-size: clamp(28px, 2.6vw, 40px);
+  font-size: clamp(22px, 2.5vw, 30px);
   color: var(--red);
 
   -webkit-text-stroke: 1px #000;
