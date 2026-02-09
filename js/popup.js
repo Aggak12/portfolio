@@ -16,12 +16,12 @@
     {
       title: "Project 1 – Mobilsite",
       body: "Dummy text for now. Short description of process, methods, and final solution. (We’ll replace this with your real write-up.)",
-      images: ["imgs/mobilsite-pre.png", "imgs/mobilsite-pre.png", "imgs/mobilsite-pre.png"],
+      images: ["imgs/Mobil1.png", "imgs/Mobil5.png", "imgs/Mobil6.png", "imgs/Mobil7.png", "imgs/Mobil2.png", "imgs/Mobil3.png", "imgs/Mobil4.png"],
     },
     {
       title: "Project 2 – Emnesite",
       body: "Dummy text for now. Explain research, prototyping, design choices, and how the final solution supports the goal.",
-      images: ["imgs/emnesite-pre.png", "imgs/emnesite-pre.png"],
+      images: ["imgs/emne1.png", "imgs/emne2.png"],
     },
     {
       title: "Project 3 – Emergency site",
