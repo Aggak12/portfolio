@@ -160,13 +160,9 @@
 
 .about-profile {
   background: var(--red);
-  padding: 90px 28px;
-}
-.about-profile {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  padding-left: 0;
-  padding-right: 0;
+  padding: 65px 0;
 }
 
 .about-profile__card {
@@ -177,9 +173,10 @@
   border: 2px solid #000;
   border-radius: 30px;
 
-  padding: 54px 60px;
+  padding: 60px 60px;
   display: grid;
-  grid-template-columns: 1.6fr 0.9fr;
+  grid-template-columns: 1.8fr 0.6fr;
+
   gap: 60px;
   align-items: start;
 }
@@ -188,7 +185,7 @@
 .about-profile__name {
   margin: 0;
   font-family: "Amarante", serif;
-  font-size: clamp(38px, 4vw, 80px);
+  font-size: 54px;
   line-height: 1;
 
   color: var(--blue);
@@ -197,16 +194,16 @@
 }
 
 .about-profile__subtitle {
-  margin: 14px 0 26px;
+  margin: 14px 0 40px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 18px;
   color: #000;
 }
 
 .about-profile__divider {
   height: 1px;
-  width: min(860px, 100%);
+  width: min(775px, 100%);
   background: rgba(111, 23, 42, 0.55);
   margin: 0 0 34px;
 }
@@ -215,20 +212,23 @@
   margin: 0;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.9;
+  font-size: 18px;
+  line-height: 1.8;
   color: #000;
-  max-width: 72ch;
+  max-width: 68ch;
 }
 
 /* right column image */
+.about-profile__image {
+  justify-self: end;
+}
 .about-profile__image img {
-  width: 75%;
+  width: 100%;
   height: auto;
   display: block;
 
-  border-radius: 4px;
-  object-fit: cover;
+  border: 0;
+  border-radius: 0;
 }
 @media (max-width: 900px) {
   .about-profile__card {
@@ -296,5 +296,87 @@
     letter-spacing: 0.02em;
 
     -webkit-text-stroke: 1.5px var(--blue);
+  }
+}
+/* =========================
+   ABOUT PAGE — REFLECTION
+   ========================= */
+
+.about-reflection {
+  background: rgba(164, 206, 255, 0.55);
+  padding: 90px 28px 70px;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  display: grid;
+  place-items: center;
+  gap: 52px;
+}
+
+.about-reflection__card {
+  width: min(1200px, 92vw);
+  background: #222222;
+  border: 2px solid var(--blue);
+  border-radius: 34px;
+  padding: 56px 56px;
+
+  box-shadow: var(--shadow);
+}
+
+.about-reflection__card p {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
+  color: rgba(193, 221, 253, 0.88); /* light blue-ish */
+}
+
+.about-reflection__card p + p {
+  margin-top: 28px;
+}
+
+/* button variant */
+.btn--reflection {
+  width: auto;
+  padding: 14px 34px;
+
+  background: var(--red);
+  border: 4px solid var(--blue);
+  color: var(--blue);
+
+  font-family: "Staatliches", sans-serif;
+  font-size: 34px;
+  letter-spacing: 0.03em;
+
+  border-radius: 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+/* hover (same vibe as your other buttons) */
+.btn--reflection:hover,
+.btn--reflection:focus-visible {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+/* mobile */
+@media (max-width: 700px) {
+  .about-reflection {
+    padding: 60px 16px 54px;
+    gap: 26px;
+  }
+
+  .about-reflection__card {
+    padding: 30px 22px;
+    border-radius: 26px;
+  }
+
+  .about-reflection__card p {
+    font-size: 18px;
+  }
+
+  .btn--reflection {
+    font-size: 28px;
+    padding: 12px 26px;
   }
 }
