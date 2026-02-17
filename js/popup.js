@@ -38,7 +38,7 @@ For this project, I developed a fictional and humorous “emergency” website c
 
 <br><br>
 <a class="modal-link-btn" href="https://aggak12.github.io/Emergency/index.html" target="_blank" rel="noopener">Visit website</a>`,
-      images: ["imgs/emnesite-pre.png"],
+      images: ["imgs/emrg.png"],
     },
 
     {
