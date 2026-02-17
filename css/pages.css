@@ -95,69 +95,69 @@
 
 .about-hero {
   position: relative;
-  height: calc(100vh - 130px); /* nav + banner */
-  min-height: 860px;
+  height: calc(120vh - 130px); /* nav + banner */
+  min-height: clamp(560px, 80vh, 860px);
   overflow: hidden;
   background: var(--bg);
 }
 
-/* background image */
+/* bg image */
 .about-hero__bg {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-
   object-position: center 0%;
 }
 
-/* black strip  */
+/* black strip */
 .about-hero__strip {
   position: absolute;
-  left: 50%;
   top: 42%;
-  transform: translate(-56%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-  width: min(880px, 76vw);
-  height: 180px;
+  width: min(92vw, 920px);
+  height: clamp(110px, 14vw, 180px);
 
   background: #000;
   box-shadow: var(--shadow);
 
-  display: grid;
-  grid-template-columns: auto max-content auto;
-  column-gap: 6px;
-  padding: 0 135px 0 95px;
+  display: flex;
   align-items: center;
-  clip-path: inset(0 0 0 40px);
+  justify-content: center;
+
+  gap: clamp(10px, 1.2vw, 22px);
+  padding-inline: clamp(18px, 6vw, 120px);
 }
 
-/* star svg */
+/* star */
 .about-hero__star {
-  width: 56px;
-  height: 56px;
-  justify-self: center;
+  flex: 0 0 auto;
+  width: clamp(34px, 5vw, 56px);
+  height: clamp(34px, 5vw, 56px);
 }
 
-/* ABOUT ME title  */
+/* ABOUT ME title */
 .about-hero__title {
   margin: 0;
   text-align: center;
 
   font-family: "Anton", sans-serif;
-  font-size: clamp(110px, 14vw, 160px); /* bigger */
+  font-size: clamp(88px, 12vw, 160px);
   line-height: 0.9;
   letter-spacing: 0.03em;
 
   color: var(--red);
-  -webkit-text-stroke: 2px var(--blue);
+  -webkit-text-stroke: clamp(1.5px, 0.25vw, 2px) var(--blue);
   paint-order: stroke fill;
   text-shadow: none;
+
+  white-space: nowrap;
 }
-/* =========================
-   ABOUT PAGE — HERO (mobile)
-   ========================= */
+
+/* Mobile */
 
 @media (max-width: 700px) {
   .about-hero {
@@ -165,44 +165,25 @@
     min-height: 560px;
   }
 
-  /* keep your crop consistent (choose ONE) */
   .about-hero__bg {
     object-position: center 40%;
   }
 
   .about-hero__strip {
     top: 38%;
-
-    /* keep your asymmetry on mobile too */
-    transform: translate(-56%, -50%);
-
     width: 92vw;
-    height: 120px;
 
-    padding: 0 18px 0 28px;
-
-    /* IMPORTANT: keep stars hugging the text */
-    grid-template-columns: auto max-content auto;
-    column-gap: 6px;
-
-    /* keep your “shorter left tail” */
-    clip-path: inset(0 0 0 24px);
-  }
-
-  .about-hero__star {
-    width: 34px;
-    height: 34px;
+    padding-inline: clamp(14px, 5vw, 28px);
+    gap: clamp(8px, 2vw, 14px);
   }
 
   .about-hero__title {
-    white-space: nowrap;
-    font-size: clamp(87px, 12vw, 88px);
+    font-size: clamp(72px, 12vw, 92px);
     line-height: 1;
     letter-spacing: 0.02em;
-
-    -webkit-text-stroke: 1.5px var(--blue);
   }
 }
+
 /* =========================
    ABOUT PAGE — PROFILE CARD
    ========================= */
