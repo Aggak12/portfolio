@@ -120,6 +120,7 @@
 
   width: min(92vw, 920px);
   height: clamp(110px, 14vw, 180px);
+  box-sizing: border-box;
 
   background: #000;
   box-shadow: var(--shadow);
@@ -143,6 +144,7 @@
 .about-hero__title {
   margin: 0;
   text-align: center;
+  min-width: 0;
 
   font-family: "Anton", sans-serif;
   font-size: clamp(88px, 12vw, 160px);
