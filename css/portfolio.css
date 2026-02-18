@@ -148,10 +148,6 @@
 
   -webkit-text-stroke: 1px #000;
   paint-order: stroke fill;
-
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 8px;
 }
 
 .project-card__subtitle {
