@@ -306,10 +306,6 @@
     -webkit-text-stroke: 2px var(--blue) !important;
   }
 
-  .portfolio-hero__star {
-    width: 26px;
-  }
-
   .portfolio-hero__strip {
     height: 190px;
     overflow: hidden;
@@ -317,5 +313,55 @@
 
   .portfolio-hero__intro {
     margin-top: 70px;
+  }
+  .modal__dialog {
+    width: calc(100vw - 20px);
+    max-height: 90svh;
+    padding: 16px 14px 18px;
+  }
+
+  /* image area full width */
+  .modal__carousel {
+    grid-template-columns: 1fr; /* one column */
+    gap: 10px;
+  }
+
+  .carousel__frame {
+    width: 100%;
+  }
+
+  .carousel__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel__btn {
+    height: 48px;
+    font-size: 26px;
+  }
+
+  .modal__carousel .carousel__btn {
+    width: 100%;
+  }
+
+  .modal__carousel {
+    grid-template-areas:
+      "frame"
+      "prev"
+      "next";
+  }
+  .carousel__frame {
+    grid-area: frame;
+  }
+  .modal__carousel .carousel__btn:first-child {
+    grid-area: prev;
+  }
+  .modal__carousel .carousel__btn:last-child {
+    grid-area: next;
+  }
+
+  .modal__text {
+    font-size: 15px;
+    line-height: 1.55;
   }
 }
