@@ -1,0 +1,91 @@
+.hero {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 90px 0 0;
+}
+
+.hero-kicker {
+  margin: 0 0 24px;
+  font-family: "Tiny5", sans-serif;
+  font-size: 52px;
+  color: var(--blue);
+  letter-spacing: 0.02em;
+
+  padding-left: clamp(80px, 12vw, 220px);
+}
+
+.hero-title {
+  margin: 0;
+  font-size: clamp(148px, 19vw, 258px);
+  line-height: 0.95;
+  font-family: "Anton", sans-serif;
+  text-align: left;
+  width: fit-content;
+  margin-left: clamp(80px, 12vw, 220px);
+
+  color: var(--red);
+  letter-spacing: 0.03em;
+
+  -webkit-text-stroke: 2px var(--blue);
+  paint-order: stroke fill;
+  text-shadow: none;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: clamp(24px, 6vw, 90px);
+  margin-top: 90px;
+  flex-wrap: wrap;
+}
+.hero-actions .btn {
+  width: 410px;
+  font-size: 45px;
+}
+
+/* INDEX button variants */
+.btn--primary {
+  background: rgba(111, 23, 42, 0.6);
+  border: var(--btn-border);
+  color: var(--blue);
+}
+
+.btn--ghost {
+  background: transparent;
+  border: var(--btn-border);
+  color: var(--blue);
+}
+
+@media (max-width: 835px) {
+  .hero-actions .btn {
+    width: min(420px, 92vw);
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding-top: 70px;
+  }
+
+  .hero-kicker {
+    padding-left: 0;
+    text-align: center;
+
+    font-size: clamp(22px, 6vw, 32px); /* small */
+    margin-bottom: 14px;
+  }
+
+  .hero-title {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+
+    font-size: clamp(72px, 18vw, 120px); /* big */
+    line-height: 0.9;
+  }
+  .hero-actions .btn {
+    width: min(320px, 90vw);
+    font-size: 28px;
+    padding: 8px 18px;
+  }
+}
