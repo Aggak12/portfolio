@@ -19,7 +19,7 @@
 
 <br><br>
 <a class="modal-link-btn" href="https://aggak12.github.io/website/index.html" target="_blank" rel="noopener">Visit website</a>`,
-      images: ["imgs/Mobil1.png", "imgs/Mobil5.png", "imgs/Mobil6.png", "imgs/Mobil3.png", "imgs/Mobil2.png", "imgs/Mobil7.png", "imgs/Mobil4.png"],
+      images: ["imgs/Mobil1.webp", "imgs/Mobil5.webp", "imgs/Mobil6.webp", "imgs/Mobil3.webp", "imgs/Mobil2.webp", "imgs/Mobil7.webp", "imgs/Mobil4.webp"],
     },
 
     {
@@ -27,7 +27,7 @@
       body: `Emnesite was an introduction to UX/UI thinking and a more design-driven project with greater creative freedom. The process began with research and idea development, followed by solution sketches that were shared and discussed in a class “gallery” format for peer feedback. We worked with user types, user goals, and user stories, and developed mood boards and style tiles to shape the visual direction. I created my own layout diagrams and focused on prototyping in Figma, working from low-fidelity to high-fidelity. This project also introduced usability methods such as Likert tests and 5-second tests, as well as tools like Lighthouse testing.
 
 My concept was a fashion-focused website exploring history and meaning behind clothing, aiming to spark curiosity by combining visual appeal with small, engaging facts. I became very absorbed in experimenting with layout, colour, and visual structure, which strengthened my design confidence and creativity. Although I did not complete the full coded version, I built the landing page and gained a much clearer understanding of how design complexity impacts implementation, which has influenced how I approach later projects.`,
-      images: ["imgs/emne1.png", "imgs/emne2.png", "imgs/emne3.png", "imgs/emne4.png", "imgs/emne5.png", "imgs/emne6.png", "imgs/emne7.png"],
+      images: ["imgs/emne1.webp", "imgs/emne2.webp", "imgs/emne4.webp", "imgs/emne5.webp", "imgs/emne6.webp"],
     },
 
     {
@@ -38,7 +38,7 @@ For this project, I developed a fictional and humorous “emergency” website c
 
 <br><br>
 <a class="modal-link-btn" href="https://aggak12.github.io/Emergency/index.html" target="_blank" rel="noopener">Visit website</a>`,
-      images: ["imgs/emrg.png"],
+      images: ["imgs/emrg.webp"],
     },
 
     {
@@ -49,7 +49,7 @@ The project introduced us to working in a more organised, collaborative workflow
 
 <br><br>
 <a class="modal-link-btn" href="https://justy488.github.io/tema-5_part2/index.html" target="_blank" rel="noopener">Visit website</a>`,
-      images: ["imgs/rosesblm.png", "imgs/virksm1.png", "imgs/virksm2.png", "imgs/virksm3.png", "imgs/virksm4.png", "imgs/virksm5.png", "imgs/virksm6.png"],
+      images: ["imgs/rosesblm.webp", "imgs/virksm1.webp", "imgs/virksm2.webp", "imgs/virksm3.webp", "imgs/virksm7.webp", "imgs/virksm4.webp", "imgs/virksm5.webp", "imgs/virksm6.webp"],
     },
   ];
 
